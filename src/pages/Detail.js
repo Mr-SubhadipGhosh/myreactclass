@@ -1,8 +1,11 @@
 import React from 'react';
-
+import SubDetails from './SubDetails';
 class Detail extends React.Component{
     render(){
-        return <p>{this.props.message}</p>;
+        return (<div>
+        <p>{this.props.message}</p>
+        <SubDetails propNumber="2"></SubDetails>
+        </div>);
     }
 }
 
