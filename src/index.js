@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Detail from './pages/Detail';
+import App from './App';
 
 ReactDOM.render(
-    <Detail message="React is working"/>,
+    <App/>,
     document.getElementById('app')
 )
