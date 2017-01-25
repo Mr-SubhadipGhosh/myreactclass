@@ -4,6 +4,6 @@ import ReactDOM from 'react-dom';
 import Detail from './pages/Detail';
 
 ReactDOM.render(
-    <Detail message="test"/>,
+    <Detail message="React is working"/>,
     document.getElementById('app')
 )
