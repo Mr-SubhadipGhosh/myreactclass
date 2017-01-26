@@ -3,6 +3,7 @@ import React from 'react';
 import Detail from './pages/Detail';
 import Info from './pages/Info';
 import LifeCycle from './pages/ReactLife';
+import MyForms from './pages/Forms';
 
 class App extends React.Component{
     constructor(props){
@@ -16,10 +17,11 @@ class App extends React.Component{
         return (<div>
             <Detail message="Detail section"></Detail>
             <Info></Info>
-            <div id="lifecyc">
+            <div>
                 <button onClick={this.countInc.bind(this)}>++Count </button>
                 <LifeCycle count={this.state.count}> </LifeCycle>
             </div>
+            <MyForms></MyForms>
         </div>);
     }
 }

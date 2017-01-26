@@ -8,5 +8,5 @@ ReactDOM.render(
     document.getElementById('app')
 )
 
-setTimeout(() => {
-   ReactDOM.unmountComponentAtNode(document.getElementById('app'));}, 10000);
+// setTimeout(() => {
+//    ReactDOM.unmountComponentAtNode(document.getElementById('app'));}, 10000);

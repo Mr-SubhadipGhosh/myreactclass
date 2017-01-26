@@ -2,7 +2,9 @@ import React from 'react';
 
 class SubDetails extends React.Component{
     render(){
-        return <p>{this.props.propSomeValue} - {this.props.propNumber}</p>;
+        return <div>
+        <button onClick={this.props.clickFunc}>Click to call parent func</button>
+        <p>{this.props.propSomeValue} - {this.props.propNumber}</p></div>;
     }
 }
 SubDetails.propTypes = {
