@@ -21,7 +21,6 @@ class Info extends React.Component{
         return (<div>Info ->{this.state.value}
         <button onClick={this.infoEventHandler}>Update State</button>
         <SubInfo ></SubInfo>
-        <hr/>
         list->
         {this.state.data.map((val, index)=>{
            return <div key={index}>{val.name}</div>

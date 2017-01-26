@@ -33,7 +33,7 @@ class ReactLife extends React.Component{
    }
 
     render(){
-        return (<div><hr/><div>React Life Cycle - wait ....{this.props.count}</div></div>);
+        return (<div><div>React Life Cycle - wait ....{this.props.count}</div>[see console]</div>);
     }
 }
 
