@@ -11,6 +11,11 @@ class Info extends React.Component{
     infoEventHandler(){
         this.setState({value:'Updated value in state'});
     }
+    shouldComponentUpdate(newProps, newState) {
+        console.log('Should component Update! > prop->', newProps);
+        console.log('Should component Update! > state->', newState);
+      return true;
+   }
     render(){
         return (<div>Info ->{this.state.value}
         <button onClick={this.infoEventHandler}>Update State</button>

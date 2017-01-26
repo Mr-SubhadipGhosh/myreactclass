@@ -9,7 +9,7 @@ class SubInfo extends React.Component{
     render(){
         return (<div>Sub info value - ><button onClick={this.clickForceHandler.bind(this)}>Update forcefully</button>
         
-            <span> {Math.random()}</span></div>);
+            <span> {Math.random()} | from props : {this.props.comingProp}</span></div>);
     }
 }
 

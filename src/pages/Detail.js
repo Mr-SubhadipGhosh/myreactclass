@@ -4,7 +4,7 @@ class Detail extends React.Component{
     render(){
         return (<div>
         <p>{this.props.message}</p>
-        <SubDetails propNumber="2"></SubDetails>
+        <SubDetails propNumber={2}></SubDetails>
         </div>);
     }
 }
