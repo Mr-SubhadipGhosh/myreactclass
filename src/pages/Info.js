@@ -5,7 +5,8 @@ class Info extends React.Component{
         super(props);
         this.infoEventHandler = this.infoEventHandler.bind(this);
         this.state = {
-            value:''
+            value:'',
+            data: [{name:'Test1'},{name:'Test3'},{name:'Test4'}]
         };
     }
     infoEventHandler(){
@@ -20,6 +21,11 @@ class Info extends React.Component{
         return (<div>Info ->{this.state.value}
         <button onClick={this.infoEventHandler}>Update State</button>
         <SubInfo ></SubInfo>
+        <hr/>
+        list->
+        {this.state.data.map((val, index)=>{
+           return <div key={index}>{val.name}</div>
+        })}
         </div>);
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 
 class Forms extends React.Component{
     constructor(props){
@@ -11,12 +12,12 @@ class Forms extends React.Component{
 
     updateState(e){
         this.setState({
-            textValue: e.target.value
+            textValue: ReactDOM.findDOMNode(this.refs.myInputRef).value // e.target.value
         });
     }
 
     render(){
-        return <div> <input  value={this.state.textValue} onChange={this.updateState}/>{this.state.textValue}</div>;
+        return <div> <input ref="myInputRef" value={this.state.textValue} onChange={this.updateState}/>{this.state.textValue}</div>;
     }
 
 }
