@@ -12,7 +12,7 @@ class Detail extends React.Component{
     }
     render(){
         return (<div>
-        <p>{this.props.message}</p>
+        <p>{this.props.params.message}</p>
         <SubDetails propNumber={this.state.someInfo}  clickFunc={this.clickEventCall.bind(this)}></SubDetails>
         </div>);
     }

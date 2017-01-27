@@ -12,7 +12,7 @@ class App extends React.Component{
     render(){
         return (
              <div>
-             <Link to="/detail">Detail</Link>&nbsp;
+             <Link to="/detail/someval">Detail</Link>&nbsp;
              <Link to="/info">Info</Link>&nbsp;             
              <Link to="/life">LifeCycle</Link>&nbsp;
              <Link to="/forms">Forms</Link>&nbsp;
